@@ -6,7 +6,7 @@ const projects = [
     id: "brand-identity",
     title: "Brand Identity Design",
     category: "Branding",
-    thumbnail: "/placeholder.svg?height=600&width=800",
+    thumbnail: "/branding/cover.png?height=600&width=800",
     description:
       "A comprehensive brand identity design for a local coffee shop, including logo, color palette, and brand guidelines.",
   },

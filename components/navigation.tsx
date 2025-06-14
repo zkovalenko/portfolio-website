@@ -26,10 +26,6 @@ export default function Navigation() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="text-xl font-bold">
-            Your Name
-          </Link>
-
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
@@ -43,6 +39,12 @@ export default function Navigation() {
                 {item.name}
               </Link>
             ))}
+          </nav>
+
+          <Link href="/" className="text-xl font-bold">
+            Katya Hassett
+          </Link>
+          <nav>
             <a
               href="/resume.pdf"
               download
@@ -50,7 +52,8 @@ export default function Navigation() {
             >
               Resume
             </a>
-            <Button
+          </nav>
+            {/* <Button
               variant="ghost"
               size="icon"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
@@ -59,8 +62,7 @@ export default function Navigation() {
               <SunIcon className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
               <MoonIcon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
               <span className="sr-only">Toggle theme</span>
-            </Button>
-          </nav>
+            </Button> */}
 
           {/* Mobile Menu Button */}
           <div className="flex md:hidden">

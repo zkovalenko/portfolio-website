@@ -12,14 +12,17 @@ const projects = [
     category: "Branding",
     client: "Local Coffee Shop",
     year: "2023",
-    thumbnail: "/placeholder.svg?height=600&width=800",
+    thumbnail: "/branding/cover.png?height=600&width=800",
     images: [
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
-      "/placeholder.svg?height=800&width=1200",
+      "/branding/cover.png?height=800&width=1200",
+      "/branding/cover.png?height=800&width=1200",
+      "/branding/cover.png?height=800&width=1200",
+      "/branding/cover.png?height=800&width=1200",
+      "/branding/cover.png?height=800&width=1200",
+      "/branding/cover.png?height=800&width=1200",
     ],
     description:
-      "A comprehensive brand identity design for a local coffee shop, including logo, color palette, and brand guidelines.",
+      "Katya comprehensive brand identity design for a local coffee shop, including logo, color palette, and brand guidelines.",
     challenge:
       "The client needed a complete brand refresh that would appeal to a younger demographic while maintaining their established customer base.",
     solution:
