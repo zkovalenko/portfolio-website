@@ -14,7 +14,7 @@ export default function ProjectCard({ id, title, category, thumbnail, descriptio
   return (
     <Link href={`/project/${id}`}>
       <Card className="overflow-hidden h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-        <div className="aspect-[4/3] relative overflow-hidden">
+        <div className="custom-card-size relative overflow-hidden">
           <Image
             src={thumbnail || "/placeholder.svg"}
             alt={title}

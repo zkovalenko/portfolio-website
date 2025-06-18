@@ -12,6 +12,7 @@ const projects = [
     category: "Branding",
     client: "Local Coffee Shop",
     year: "2023",
+    tools: "Adobe Illustrator, Adobe Photoshop, Adobe InDesign",
     thumbnail: "/branding/cover.png?height=600&width=800",
     images: [
       "/branding/cover.png?height=800&width=1200",
@@ -23,6 +24,8 @@ const projects = [
     ],
     description:
       "Katya comprehensive brand identity design for a local coffee shop, including logo, color palette, and brand guidelines.",
+    header: "Coping with the pandemic",
+    subheader: "A brand identity design for a local coffee shop",
     challenge:
       "The client needed a complete brand refresh that would appeal to a younger demographic while maintaining their established customer base.",
     solution:
@@ -176,27 +179,41 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
           />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <div>
-            <h2 className="text-xl font-semibold mb-3">Project Overview</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="md:col-span-1 px-6 md:px-[46px]">
+            <h1 className="text-xl font-semibold mt-6">DATE</h1>
+            <p className="text-gray-600 dark:text-gray-300">{project.year}</p>
+            
+            <h1 className="text-xl font-semibold mt-6">TOOLS</h1>
+            <p className="text-gray-600 dark:text-gray-300">
+              {project.tools}
+            </p>
+
+            <h1 className="text-xl font-semibold mt-6">DESCRIPTION</h1>
             <p className="text-gray-600 dark:text-gray-300">{project.description}</p>
           </div>
-          <div>
-            <h2 className="text-xl font-semibold mb-3">Challenge</h2>
-            <p className="text-gray-600 dark:text-gray-300">{project.challenge}</p>
+          <div className="md:col-span-2">
+            <h1 className="text-xl font-semibold mb-3">{project.header}</h1>
+            
+            <p className="mb-3 italic">{project.subheader}</p>
+            
+            <p className="text-gray-600 dark:text-gray-300 mt-8">{project.challenge}</p>
+            <p className="text-gray-600 dark:text-gray-300 mt-8">{project.challenge}</p>
+            <p className="text-gray-600 dark:text-gray-300 mt-8">{project.challenge}</p>
+
           </div>
         </div>
-
+{/* 
         <div className="mb-12">
           <h2 className="text-xl font-semibold mb-3">Solution</h2>
           <p className="text-gray-600 dark:text-gray-300 mb-6">{project.solution}</p>
 
           <h2 className="text-xl font-semibold mb-3">Process</h2>
           <p className="text-gray-600 dark:text-gray-300">{project.process}</p>
-        </div>
+        </div> */}
 
         <div>
-          <h2 className="text-xl font-semibold mb-6">Project Gallery</h2>
+          {/* <h2 className="text-xl font-semibold mb-6">Project Gallery</h2> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {project.images.map((image, index) => (
               <div key={index} className="aspect-[4/3] relative overflow-hidden rounded-lg">
