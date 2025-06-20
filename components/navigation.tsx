@@ -44,13 +44,21 @@ export default function Navigation() {
           <Link href="/" className="text-xl font-bold">
             Katya Hassett
           </Link>
-          <nav>
+          <nav className="flex items-center gap-4">
             <a
               href="/resume.pdf"
               download
               className="text-sm font-medium text-gray-500 dark:text-gray-400 transition-colors hover:text-black dark:hover:text-white"
             >
               Resume
+            </a>
+            <a
+              href="https://calendly.com/your-username"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-gray-500 dark:text-gray-400 transition-colors hover:text-black dark:hover:text-white"
+            >
+              Book time with Katya
             </a>
           </nav>
             {/* <Button
@@ -106,6 +114,15 @@ export default function Navigation() {
               onClick={() => setIsMenuOpen(false)}
             >
               Resume
+            </a>
+            <a
+              href="https://calendly.com/your-username"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-500 dark:text-gray-400"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Help
             </a>
           </div>
         </div>
